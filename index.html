@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best Buy — Order Page Mockup Builder</title>
+<style>
+:root{--blue:#0046be;--ink:#151923;--muted:#5b6472;--line:#d8dde5;--green:#287326;--paper:#f7f9fc}
+*{box-sizing:border-box}body{margin:0;background:#e9edf3;color:var(--ink);font:16px/1.35 Arial,Helvetica,sans-serif}
+.shell{max-width:1040px;margin:24px auto;padding:16px;display:grid;grid-template-columns:320px minmax(0,1fr);gap:20px}
+.panel{background:white;border:1px solid #d8dee8;border-radius:14px;padding:18px;align-self:start;box-shadow:0 4px 18px #18243a12}.panel h1{font-size:20px;margin:0 0 6px}.panel p{font-size:13px;color:#596273;margin:0 0 16px}.field{display:grid;gap:5px;margin:12px 0}.field label{font-size:12px;font-weight:700;color:#404958}.field input,.field select,.field textarea{width:100%;padding:10px;border:1px solid #cbd2dd;border-radius:7px;font:14px Arial}.field textarea{resize:vertical;min-height:60px}.hint{font-size:11px;color:#687386}.btn{width:100%;padding:11px 14px;border:0;border-radius:8px;background:var(--blue);color:white;font-weight:700;cursor:pointer;margin-top:8px}.btn.secondary{background:#edf2fa;color:#123d83}
+.preview-wrap{display:flex;justify-content:center;align-items:flex-start}.phone{position:relative;width:min(100%,490px);min-height:850px;background:var(--paper);border-radius:24px;overflow:hidden;box-shadow:0 12px 35px #18243a25;border:1px solid #d4dae4}.topbar{height:64px;background:var(--blue);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 22px}.mark{font-weight:900;line-height:.78;text-align:center;font-size:22px;letter-spacing:-1.2px}.mark span{display:block;color:#ffe000;font-size:12px;text-align:right}.hamb{font-size:26px}.search{font-size:29px}.content{padding:14px 18px 30px}.sample{background:#fff4d7;color:#684800;border:1px solid #e7c86e;border-radius:7px;padding:8px 10px;text-align:center;font-size:11px;font-weight:800;letter-spacing:.5px;margin-bottom:12px}.content h2{font-size:34px;letter-spacing:-1px;margin:0 0 12px}.rule{border:0;border-top:1px solid #cbd2dc;margin:14px 0}.meta{font-size:17px;line-height:1.75}.meta b{font-weight:700}.status{font-size:23px;color:var(--green);font-weight:700;margin:18px 0 5px}.copy{font-size:18px;line-height:1.28;margin:0 0 12px}.ship{font-size:17px;line-height:1.4}.product{border:1px solid #c8d0dc;border-radius:9px;padding:15px;margin-top:16px;background:linear-gradient(135deg,#fff,#f5f8fc)}.prodtop{display:grid;grid-template-columns:132px 1fr;gap:16px;align-items:start}.prodimg{height:132px;border:1px dashed #aab5c5;background:#eef2f7;display:flex;align-items:center;justify-content:center;text-align:center;color:#586477;font-size:12px;padding:10px}.prodname{font-size:22px;color:#064b9b;font-weight:700;line-height:1.15}.details{font-size:16px;line-height:1.55;margin-top:42px}.totals{margin-top:16px;border-top:1px solid #d6dce5;padding-top:10px;font-size:16px}.totalrow{display:flex;justify-content:space-between;gap:10px;padding:3px 0}.totalrow strong{font-weight:700}.grand{font-size:18px;font-weight:700;border-top:1px solid #d6dce5;margin-top:6px;padding-top:8px}.watermark{position:absolute;inset:0;pointer-events:none;display:flex;align-items:center;justify-content:center;transform:rotate(-28deg);font-size:42px;font-weight:900;letter-spacing:3px;color:#173b6b13;text-align:center;line-height:1.2}.foot{font-size:11px;color:#697386;margin-top:18px;text-align:center}
+@media(max-width:760px){.shell{grid-template-columns:1fr;margin:0;padding:10px}.panel{order:0}.preview-wrap{order:1}.phone{min-height:800px}.content h2{font-size:30px}}
+@media print{body{background:white}.shell{display:block;margin:0;padding:0}.panel{display:none}.preview-wrap{display:block}.phone{width:100%;max-width:490px;box-shadow:none;margin:0 auto}}
+</style></head>
+<body><main class="shell">
+<section class="panel"><h1>Best Buy mockup builder</h1><p>Editable illustrative layout. The preview is permanently marked as a sample and is not a real order confirmation.</p>
+<div class="field"><label for="date">Purchase date</label><input id="date" value="Nov 23, 2026"></div>
+<div class="field"><label for="order">Sample reference</label><input id="order" value="DEMO-000123"></div>
+<div class="field"><label for="total">Order total (USD)</label><input id="total" type="number" min="0" step="0.01" value="74.99"></div>
+<div class="field"><label for="status">Status</label><select id="status"><option>On its way</option><option>Order confirmed</option><option>Preparing for shipment</option><option>Ready for pickup</option></select></div>
+<div class="field"><label for="message">Status message</label><textarea id="message">This is a sample order-status layout for design review.</textarea></div>
+<div class="field"><label for="product">Product name</label><input id="product" value="Nintendo Switch 2 System"></div>
+<div class="field"><label for="model">Model</label><input id="model" value="DEMO-MODEL"></div>
+<div class="field"><label for="sku">SKU</label><input id="sku" value="DEMO-SKU"></div>
+<div class="field"><label for="qty">Quantity</label><input id="qty" type="number" min="1" value="1"></div>
+<div class="field"><label for="item">Item price (USD)</label><input id="item" type="number" min="0" step="0.01" value="499.99"></div>
+<div class="field"><label for="discount">Discount (USD)</label><input id="discount" type="number" min="0" step="0.01" value="425.00"></div>
+<div class="field"><label for="image">Product image URL (optional)</label><input id="image" placeholder="https://…"><span class="hint">Use an image you own or are licensed to use.</span></div>
+<button class="btn" id="print">Print / Save preview as PDF</button><button class="btn secondary" id="reset">Reset sample values</button>
+</section>
+<section class="preview-wrap"><article class="phone" aria-label="Illustrative Best Buy-style order page mockup">
+<header class="topbar"><div class="hamb">☷</div><div class="mark">BEST<br>BUY<span>▰</span></div><div class="search">⌕</div></header>
+<div class="content"><div class="sample">SAMPLE MOCKUP · NOT A REAL PURCHASE OR RECEIPT</div><h2>Order Details</h2><hr class="rule">
+<div class="meta"><div><b>Purchase Date:</b> <span id="v-date">Nov 23, 2026</span></div><div><b>Reference:</b> <span id="v-order">DEMO-000123</span></div><div><b>Illustrative Total:</b> $<span id="v-total">74.99</span></div></div><hr class="rule">
+<div class="status" id="v-status">On its way</div><p class="copy" id="v-message">This is a sample order-status layout for design review.</p><div class="ship"><b>Shipping information</b><br><span style="color:#687386">Sample address and tracking details omitted</span></div>
+<section class="product"><div class="prodtop"><div class="prodimg" id="imgbox">PRODUCT<br>IMAGE</div><div><div class="prodname" id="v-product">Nintendo Switch 2 System</div><div class="details"><b>Model:</b> <span id="v-model">DEMO-MODEL</span><br><b>SKU:</b> <span id="v-sku">DEMO-SKU</span><br><b>Quantity:</b> <span id="v-qty">1</span></div></div></div>
+<div class="totals"><div class="totalrow"><strong>Item subtotal:</strong><span>$<span id="v-item">499.99</span></span></div><div class="totalrow"><strong>Illustrative discount:</strong><span>−$<span id="v-discount">425.00</span></span></div><div class="totalrow"><strong>Shipping:</strong><span>$0.00</span></div><div class="totalrow grand"><strong>Sample total:</strong><span>$<span id="v-total2">74.99</span></span></div></div></section>
+<div class="foot">For design prototyping only · Not affiliated with or issued by Best Buy</div></div><div class="watermark">SAMPLE<br>MOCKUP</div></article></section></main>
+<script>
+const ids=['date','order','total','status','message','product','model','sku','qty','item','discount'];
+const map={date:'v-date',order:'v-order',total:'v-total',status:'v-status',message:'v-message',product:'v-product',model:'v-model',sku:'v-sku',qty:'v-qty',item:'v-item',discount:'v-discount'};
+function money(v){return (Number(v)||0).toFixed(2)}
+function update(){ids.forEach(id=>{const el=document.getElementById(id),out=document.getElementById(map[id]);if(!out)return;out.textContent=['total','item','discount'].includes(id)?money(el.value):el.value});document.getElementById('v-total2').textContent=money(document.getElementById('total').value)}
+ids.forEach(id=>document.getElementById(id).addEventListener('input',update));
+document.getElementById('image').addEventListener('input',e=>{const box=document.getElementById('imgbox');box.innerHTML='';if(e.target.value){const img=document.createElement('img');img.src=e.target.value;img.alt='Product preview';img.style='width:100%;height:100%;object-fit:contain';img.onerror=()=>{box.textContent='Image unavailable'};box.appendChild(img)}else{box.textContent='PRODUCT IMAGE'}});
+document.getElementById('print').onclick=()=>window.print();
+document.getElementById('reset').onclick=()=>{location.reload()};update();
+</script></body></html>
